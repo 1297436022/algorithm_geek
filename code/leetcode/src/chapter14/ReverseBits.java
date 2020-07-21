@@ -9,5 +9,4 @@ class ReverseBits {
         }
         return ans >>> 0;
     }
-    
 }
