@@ -1,0 +1,7 @@
+分治模板：
+1：终止条件(terminator)
+2: 处理当前层的逻辑(split your big problem)
+3: 下探到下一层, 合并(merge)
+4: 清理当前层(reverse states)
+
+分治可看做递归的一种
