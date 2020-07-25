@@ -2,6 +2,15 @@ package chapter10;
 
 class LongestCommonSubsequence {
 
+
+    //最长公共子序列的状态转移方程：
+    //if s1[i - 1] == s2[j - 1]: dp[i][j] = dp[i - 1][j - 1] + 1
+    //else dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
+
+    //如果改为最长公共子串，则状态转移方程为
+    //if s1[i -1] == s2[j - 1]: dp[i][j] = dp[i - 1][j - 1]
+    //else dp[i][j] =0
+
     //O(MN)  O(MN)
     public int longestCommonSubsequence(String text1, String text2) {
         int m = text1.length();
@@ -35,4 +44,6 @@ class LongestCommonSubsequence {
         }
         return dp[dp.length-1];
     }
+
+    
 }
