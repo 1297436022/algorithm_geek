@@ -1,0 +1,18 @@
+递归模板：
+1：递归终止条件
+2: 处理当前层的逻辑
+3: 下探到下一层
+4: 清理当前层(如果有的话)
+public void recur(int level, int param) {
+    //1
+    if (level > MAX_LEVEL) {
+        return;
+    }
+    //2
+    process(level, param);
+    //3
+    recur(leve:level+1, newParam);
+    //4
+    //restore current status
+
+}

@@ -1,6 +1,8 @@
 package chapter1;
 
+//source: https://leetcode-cn.com/problems/container-with-most-water/
 public class ContainerWithMostWater {
+
     public static void main(String[] args) {
         int[] a = {1, 8, 6, 2, 5, 4, 8, 3, 7};
         System.out.println(maxArea1(a));

@@ -1,6 +1,15 @@
 package chapter16;
 
 class MergeSort {
+
+    public static void main(String[] args) {
+        MergeSort ms = new MergeSort();
+        int[] arr = {5, 8, 1, 9, 6, 2, 4, 7};
+        ms.mergeSort(arr, 0, 7);
+        for (int i = 0; i < arr.length; ++i) {
+            System.out.println(arr[i]);
+        }
+    }
     
     //O(nlogn)
     public void mergeSort(int[] array, int left, int right) {
@@ -25,6 +34,7 @@ class MergeSort {
         while (i <= mid) {
             temp[k++] = arr[i++];
         }
+        
         while (j <= right) {
             temp[k++] = arr[j++];
         }
