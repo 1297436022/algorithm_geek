@@ -6,8 +6,8 @@ public class MoveZeroes {
         //moveZeroes1(a);
         moveZeroes2(a);
         //moveZeroes3(a);
-        for (int i = 0; i < a.length; ++i) {
-            System.out.print(a[i] + " ");
+        for (int j : a) {
+            System.out.print(j + " ");
         }
     }
 
